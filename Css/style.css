@@ -1,0 +1,208 @@
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: grid;
+    background-color: orangered;
+    color: black;
+    text-align: center;
+    padding: 1.5%;
+    width: 100%;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+header img {
+    position: absolute;
+    top: 5px; /* Ajuste este valor conforme necessário para mover a imagem para cima */
+    left: 1px; /* Ajuste este valor conforme necessário para mover a imagem para a esquerda */
+    width: 80px;
+    height: auto;
+}
+.img-container {
+    position: absolute;
+    bottom: 0;
+    right: 10px; /* Ajuste conforme necessário para movê-la para o canto direito */
+    width: 120px; /* Ajuste conforme necessário para o tamanho desejado */
+    background-color: orangered;
+    height: 4vh;
+}
+
+
+
+.cabecalho:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* SUBTITULO */
+
+.subtitulo {
+   
+display: grid;
+background-color: black;
+color: white;
+text-align: center;
+padding: 0.1%;
+width: 100%;
+font-weight: bold;
+margin-bottom: 2
+30px; /* Ajuste conforme necessário para dar espaço suficiente */
+font-size: 25px;
+}
+section {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 3%;
+    border-color: black;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto; /* Adicione uma linha adicional para a quarta div */
+    gap: 20px;
+    justify-content: center;
+    padding: 120px;
+    
+    grid-column: 1;
+    background-color:grey;
+    width: 100%;
+    font-weight: bold;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.caixa:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.historia,
+
+.localizacao {
+    text-align: center;
+    padding-top: 3px;
+    border: 6px solid black;
+    border-radius: 3%;
+    background-color:orangered;
+}
+.titulos{
+    text-align: center;
+    padding-top: 3px;
+    border: 6px solid black;
+    border-radius: 3%;
+    background-color:white;
+
+}
+
+.historia:hover,
+.titulos:hover,
+.localizacao:hover {
+    color: black;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.historia img,
+.titulos img,
+.localizacao img {
+    margin-bottom: 50px;
+}
+
+.historia a,
+.titulos a,
+.localizacao a {
+    color: black;
+    text-decoration: none;
+}
+
+.historia a:hover,
+.titulos a:hover,
+.localizacao a:hover {
+    color: gray;
+}
+.maior {
+    text-align: center;
+    padding-top: 50px;
+     background-color:grey;
+    width: 300%;
+    height:410px ;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.maior img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transform-origin: top center;
+    transition: transform 0.3s;
+    border: solid black;
+    border-radius: 3%;
+    
+}
+
+.maior:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    
+}
+
+.evoluir {
+
+    text-align: center;
+    padding-top: 5px;  
+    background-color: grey;
+    grid-row: span 3;
+    width: 100%;
+    height: 150px; /* Ajuste conforme necessário */
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 420px; /* Ajuste conforme necessário para posicionar mais abaixo */
+    font-size: 25px;
+}
+
+
+.evoluir a {
+    color:white;
+    text-decoration: none;
+}
+
+.evoluir a:hover {
+    color: orangered;
+    
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,0 +1,247 @@
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: grid;
+    background-color: orangered;
+    color: black;
+    text-align: center;
+    justify-items: center;
+    padding: 0.5%;
+    width: 96,5%;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+    }
+header img { 
+    top: 5px; 
+    left: 1px; 
+    width: 80px;
+    height: auto;
+}
+.img-container {
+    position: absolute;
+    bottom: 0;
+    right: 10px; 
+    width: 120px; 
+    background-color: orangered;
+    height: 4vh;
+    left: 1240px;
+}
+/* SETA HOME */
+
+.list-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px; 
+}
+
+.list-item a {
+    text-decoration: none;
+    color:black;
+    font-size: 44px; 
+}
+.material-symbols-outlined a:hover {
+    color: white; 
+}
+
+.cabecalho:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* SUBTITULO */
+
+.subtitulo {
+   
+    display: grid;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.1%;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 2 30px;
+    font-size: 15px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%; 
+    margin: auto; 
+    font-weight: bold;
+    height:100%; 
+}
+section p{
+    margin-bottom: 0%;
+    
+}
+img {
+    border-radius: 3%;
+    
+
+   
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.caixa {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+    background-color: grey;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 190vh;
+    margin-bottom: 100px;
+    
+}
+.caixa h2{
+    color: white;
+}
+
+.caixa p {  
+    margin-top:20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    
+
+    
+}
+
+.caixa img {
+    max-width: 100%;
+    height: 200px;
+    border:solid black 3px;
+    border-radius: 4%;
+    
+}
+#imgtr img{
+    height: 90px;
+
+
+}
+.link-imagem{
+    text-decoration: none;
+}
+.link-imagem img {
+    border: none;
+}
+.caixa:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    html,body {
+        font-size: 14px; 
+        overflow-x: hidden;
+    }
+
+    /* CABEÇALHO */
+    .cabecalho {
+        font-size: 16px;
+        padding: 1%;
+        width: 100%; 
+        position: relative;
+    }
+
+    header img {
+        width: 60px; 
+    }
+
+    .img-container {
+        width: 80px; 
+        left: auto;
+        right: 5px;
+    }
+
+    .list-item {
+        margin: 5px; 
+    }
+
+    .list-item a {
+        font-size: 24px; 
+    }
+
+    /* SUBTÍTULO */
+    .subtitulo {
+        font-size: 12px; 
+        margin-bottom: 0px;
+        border: none;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    .caixa {
+        min-height: auto; 
+        margin-bottom: 50px;
+        border: none;
+    }
+
+    .caixa p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .caixa img {
+        border-radius: 0; 
+        max-width: 250px;
+        max-height: 100px;
+    }
+    #imgtr {
+        width: 100%;  
+        margin: 0; 
+    }
+
+    #imgtr img {
+        max-width: 80%; 
+        height: auto; 
+        border-radius: 6%;
+    }
+
+
+    /* RODAPÉ */
+    footer {
+        padding: 5px;
+        font-size: 12px;
+        text-align: center left;
+    }
+    footer p {
+        text-align: center;
+    }
+    }

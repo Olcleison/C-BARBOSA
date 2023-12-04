@@ -1,0 +1,380 @@
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: grid;
+    background-color: orangered;
+    color: black;
+    text-align: center;
+    justify-items: center;
+    padding: 0.5%;
+    width: 96,5%;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+    }
+header img {  
+    top: 5px; 
+    left: 1px; 
+    width: 80px;
+    height: auto;
+}
+.img-container {
+    position: absolute;
+    bottom: 0;
+    right: 10px; 
+    width: 120px; 
+    background-color: orangered;
+    height: 4vh;
+    left: 1240px;
+}
+/* SETA HOME */
+
+.list-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.list-item a {
+    text-decoration: none;
+    color:black;
+    font-size: 40px; 
+}
+
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+
+.list-item {       
+    margin-right: 10px;
+}
+
+.material-symbols-outlined a {
+    text-decoration: none;
+    color: black;
+    font-size: 44px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: color 0.3s; 
+}
+
+.material-symbols-outlined a:hover {
+    color: white; /
+}
+
+.cabecalho:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* SUBTITULO */
+
+.subtitulo {
+   
+    display: grid;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.1%;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 2 30px;
+    font-size: 15px;
+}
+section {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100%;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 3%;
+    border-color: black;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto ; 
+    gap: 20px;
+    justify-content: center;
+    padding: 120px;  
+    grid-column: 1;
+    background-color:grey;
+    width: 100%; 
+    height: 100% ; 
+    font-weight: bold;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.texto-apos-maior {
+    height: 100%;
+    
+}
+.texto-apos-maior p{
+    font-size: 14px;
+}
+
+.caixa:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.quadrado-1{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    border: 6px solid black;
+    border-radius: 3%;
+    background-color:orangered;
+}
+.quadrado-2{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    border: 6px solid black;
+    border-radius: 3%;
+    background-color:white;
+
+
+}
+
+ .quadrado-3{
+    text-align: center;
+    padding-top: 64px;
+    padding-left: 10px;
+    border: 6px solid black;
+    border-radius: 3%;
+    background-color:orangered;
+
+ }
+
+.quadrado-1:hover,
+.quadrado-2:hover,
+.quadrado-3:hover {
+    color: black;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.quadrado-1 img,
+.quadrado-2 img,
+.quadrado-3 img {
+    margin-bottom: 50px;
+    margin-left:-10px ;
+}
+.quadrado-1 p,
+.quadrado-2 p,
+.quadrado-3 p
+{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+}
+
+.maior {
+    text-align: center;
+    padding-top: 50px;
+    background-color:grey;
+    width: 300%;
+    height:410px ;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.maior img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transform-origin: top center;
+    transition: transform 0.3s;
+    border: solid black;
+    border-radius: 3%;
+    
+}
+
+.maior:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    
+}
+
+.evoluir {
+
+    text-align: center;
+    padding-top: 5px;  
+    background-color: grey;
+    grid-row: span 3;
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 420px;
+    font-size: 25px;
+}
+
+
+.evoluir a {
+    color:white;
+    text-decoration: none;
+}
+
+.evoluir a:hover {
+    color: orangered;
+    
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+    html,body {
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    .cabecalho {
+        font-size: 16px; 
+        padding: 1%;
+        width: 100%; 
+        left: 0;
+        position: relative;
+    }
+
+    header img {
+        width: 60px; 
+    }
+
+    .img-container {
+        width: 80px; 
+        left: auto;
+        right: 5px;
+    }
+
+    .list-item {
+        margin: 5px; 
+    }
+
+    .list-item a {
+        font-size: 24px; 
+    }
+
+    .subtitulo {
+        font-size: 12px;
+        margin-bottom: 0px;
+        border: none;
+    }
+
+    .caixa {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        padding-bottom: 40px;
+    }
+
+    .caixa p {
+        font-size: 12px;
+    }
+
+    .caixa img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .quadrado-1,
+    .quadrado-2,
+    .quadrado-3 {
+        padding: 10px; 
+        border-width: 1px; 
+        border-radius: 3px; 
+        max-width: 50%;
+     
+    }
+
+    .quadrado-1 img,
+    .quadrado-2 img,
+    .quadrado-3 img {
+        max-width: 70%; 
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .quadrado-1 p,
+    .quadrado-2 p,
+    .quadrado-3 p {
+        font-size: 10px; 
+        margin-bottom: 3px;
+    }
+
+    .maior {
+        width: 80%;
+        max-width: 400px;
+        margin-top: -10px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .maior img {
+        width: 80%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .evoluir {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+        margin-left: -15px;
+    }
+
+   footer {
+        padding: 5px;
+        font-size: 12px;
+        text-align: center left;
+    }
+    footer p {
+        text-align: center;
+    }
+}
